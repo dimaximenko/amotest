@@ -22,6 +22,7 @@
 
  */
 
+task17(136);
 function task17($n)
 {
     $sum = 0;
@@ -29,9 +30,9 @@ function task17($n)
     for ($i = 0; $i <= $n; $i++) {
         if (!($i%3) && !($i%5)) {
             $sum--;
-        } elseif ($i%3) {
+        } elseif (!($i%3)) {
             echo $i.'<br>';
-        } elseif ($i%5) {
+        } elseif (!($i%5)) {
             $sum+=$i;
         }
     }
