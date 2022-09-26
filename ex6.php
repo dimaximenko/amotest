@@ -22,13 +22,12 @@
 
  */
 
-
 function task17($n)
 {
     $sum = 0;
 
     for ($i = 0; $i <= $n; $i++) {
-        if ($i%3 && $i%5) {
+        if (!($i%3) && !($i%5)) {
             $sum--;
         } elseif ($i%3) {
             echo $i.'<br>';
